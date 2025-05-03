@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cockroach Smasher</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Audio Elements -->
+  <audio id="bgMusic" src="assets/background-music.mp3" loop></audio>
+  <audio id="squashSound" src="assets/squish.mp3"></audio>
+  <audio id="slipperSwing" src="assets/msc/slipper-swing.mp3"></audio>
+
+  <!-- Game Container -->
+  <div id="headerContainer">
+    <span style="font-family: sans-serif; font-size: 80px; color: #ede907; text-shadow: 2px 2px 4px #13bc07;">SMASH THE COCKROACHES!!!</span>
+    <div id="hud">
+      <span id="highScore">High Score: 0</span>
+      <span id="timer">Time: 0s</span>
+      <span id="killCount">Kills: 0</span>
+      <button id="muteBtn">Mute</button>
+    </div>
+  </div>
+
+  <div id="gameContainer">
+    <div id="gameArea"></div>
+    <img id="slipperCursor" src="assets/slippers.png" alt="Slipper">
+  </div>
+
+  <button id="startBtn">START GAME</button>
+  
+  <div id="gameOver" style="display: none;">
+    <h1>GAME OVER</h1>
+    <p id="finalScore">Your Score: 0</p>
+    <p id="finalHighScore">High Score: 0</p>
+    <button id="restartBtn">PLAY AGAIN</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

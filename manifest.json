@@ -1,0 +1,10 @@
+
+{
+  "name": "Kill the Cockroaches",
+  "short_name": "CockroachGame",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "A fun game to kill cockroaches",
+  "icons": []
+}
